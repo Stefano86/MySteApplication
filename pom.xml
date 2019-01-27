@@ -2,11 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>SampleApp</groupId>
-    <artifactId>SampleApp</artifactId>
+    <groupId>MyBigProjectG</groupId>
+    <artifactId>MyBigProject</artifactId>
     <packaging>war</packaging>
     <version>1.0</version>
-    <name>SampleApp</name>
+    <name>MyBigProjectName</name>
   
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -31,16 +31,17 @@
      <!-- http://maven.apache.org/guides/mini/guide-building-for-different-environments.html -->
      <id>openshift</id>
      <build>
-        <finalName>SampleApp</finalName>
+        <finalName>MyBigProjectFinalName</finalName>
         <plugins>
           <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.4</version>
                 <configuration>
+                	<webXml>src/main/webapp/WEB-INF/web.xml</webXml>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                     <outputDirectory>target</outputDirectory>
-              		<warName>ROOT</warName>
+              		<warName>MyProject</warName>
                 </configuration>
             </plugin>
         </plugins>
