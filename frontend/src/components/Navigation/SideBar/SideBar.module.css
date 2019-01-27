@@ -1,0 +1,127 @@
+.SideBar {
+    background: #2c3e50;
+    border-right: 1px solid #e5e5e5;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    width: 60px;
+    overflow: hidden;
+    z-index: 1000;
+    padding-top: 30px;
+}  
+
+.SideBar:hover {
+    width: 250px;
+    overflow: visible;
+}
+
+.SideBar .fa-2x {
+    font-size: 2em;
+}
+
+.Fa {
+    position: relative;
+    display: table-cell;
+    width: 60px;
+    height: 36px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.Fa .fa-2x{
+    font-size: 5em;
+}
+
+.Fa2x {
+    font-size: 5em;
+}
+
+.SideBar  .icon {
+    width: 48px;
+}
+
+.SideBar  .icon {
+    width: 48px;
+}
+
+.SideBar >ul {
+    margin: 7px 0;
+}
+
+.SideBar  li {
+    position: relative;
+    display: block;
+    width: 250px;
+}
+
+.SideBar li:hover {
+    border-right: 1px solid white;
+}
+
+.SideBar .zoom-menu li:hover {
+    border-right: 0px solid white;
+}
+
+.SideBar li>a, .SideBar li>ul>li>a {
+    position: relative;
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #999;
+    font-family: arial;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.SideBar>ul>li>ul>li>a>i {
+    box-sizing: content-box;
+/*     padding-left: 40px; */
+}
+
+.SideBar a[aria-expanded="false"]::before, .SideBar a[aria-expanded="true"]::before {
+    content: '\e259';
+    display: block;
+    position: absolute;
+    right: 20px;
+    font-family: 'Glyphicons Halflings';
+    font-size: 0.6em;
+    top: calc(50% - 5.5px);
+    /*for centering element - calc top 50% minus middle Height of icon*/
+}
+
+.SideBar a[aria-expanded="true"]::before {
+    content: '\e260';
+}
+
+.SideBar .nav-icon {
+    position: relative;
+    display: table-cell;
+    width: 60px;
+    height: 36px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+.SideBar .nav-text {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    width: 190px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+}
+
+.SideBar>ul.logout {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.SideBar li:hover>a, nav.SideBar li.active>a, .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus, .dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus, .no-touch .dashboard-page nav.dashboard-menu ul li:hover a, .dashboard-page nav.dashboard-menu ul li.active a {
+    color: #fff;
+    background-color: #3498da;
+}
